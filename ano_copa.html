@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<h2>Anos em que se teve o evento da Copa do Mundo</h2>
+
+<script>
+
+	function pulaLinha() {
+		document.write("<br><hr>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var anoCopa = 1930;
+	var anoLimite = parseInt(prompt("Entre com a data limite de listagem"));
+
+	while (anoCopa <= anoLimite) {
+		mostra("Teve copa em " + anoCopa);
+		anoCopa = anoCopa + 4;
+	}
+
+	mostra("FIM");
+
+	mostra("<h3><big>A próxima copa ocorrerá em " + anoCopa + "</big></h3>")
+
+</script>

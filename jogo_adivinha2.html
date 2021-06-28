@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+        document.write("<br><hr>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia(n) {
+    	return Math.round(Math.random() * n);
+    }
+
+    var n = parseInt(prompt("Escolha um número qualquer, pensarei em um némero de 0 a :"));
+
+    var numeroPensado = sorteia(n);
+    console.log(numeroPensado);
+    var tentativas = 1;
+
+    while(tentativas <= 3) {
+        console.log(numeroPensado);
+        var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+        if(chute == numeroPensado) {
+
+            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+            break;
+
+        } else {
+
+            mostra("Você errou!");
+        }
+
+        tentativas++;
+    }
+
+    if(chute != numeroPensado) {
+        mostra("Que pena, eu havia pensado no " + numeroPensado);
+    }
+
+
+    mostra("FIM");
+
+</script>

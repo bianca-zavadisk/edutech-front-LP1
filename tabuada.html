@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<h2>Tabuada do 7</h2>
+
+<script>
+
+	function pulaLinha() {
+		document.write("<br><hr>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var numero = 7;
+
+	for (var multiplicador = 1; multiplicador <= 10; multiplicador++){
+		mostra(numero + " x " + multiplicador + " = " + (numero * multiplicador));
+	}
+
+	mostra("FIM");
+
+</script>

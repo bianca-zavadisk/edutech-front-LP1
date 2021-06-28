@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<h1>Tabuada</h1>
+
+<script>
+
+	function pulaLinha() {
+		document.write("<br><hr>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var numero = parseInt(prompt("Insira o número multiplicador: "));
+	document.write("<h2>" + "Tabuada do " + numero + "</h2>");
+
+	for (var multiplicador = 1; multiplicador <= 10; multiplicador++){
+		mostra(numero + " x " + multiplicador + " = " + (numero * multiplicador));
+	}
+
+	mostra("FIM");
+
+</script>
